@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/vertBG"
+    android:id="@+id/vertical">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="90dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/ukrFlag"/>
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/rusFlag" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/textbg"
+        android:gravity="center"
+        android:text="Россия"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="195dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/textbg"
+        android:gravity="center"
+        android:text="Не Россия"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/rus"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/textbg"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/noRus"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="240dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/textbg"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
+        android:text=":"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btnbg"
+        android:layout_marginTop="410dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true"
+        android:onClick="addNoRus"
+        android:text="Добавить балл"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="410dp"
+        android:background="@drawable/btnbg"
+        android:onClick="addRus"
+        android:text="Добавить балл"
+        android:textColor="@color/white" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/btnbg"
+        android:onClick="resetAll"
+        android:text="Сбросить"
+        android:textColor="@color/white"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>
